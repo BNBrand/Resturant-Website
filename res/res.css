@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+html,
+body {
+  font-family: Poppins;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+.top-container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  transition: 0.5s;
+}
+.header1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #ddd, #aaa);
+}
+.mobile {
+  display: none;
+}
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu,
+.icon,
+.fa-container {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.icon {
+  display: none;
+}
+.menu {
+  display: flex;
+  gap: 4vw;
+}
+.fa-container {
+  gap: 1vw;
+}
+.fa-container a,
+.menu a {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.header2 {
+  display: flex;
+  gap: 8vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: sticky;
+}
+.nav-menu {
+  display: flex;
+  gap: 3vw;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  height: 80vh;
+  background-image: linear-gradient(#bbb, #fff);
+}
+.Search,
+.nav-menu {
+  color: #ffffff;
+  padding: 5vh 0;
+}
+.Search input {
+  border-radius: 10px;
+  width: 15vw;
+  height: 4vh;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2vh;
+}
+.wrapper-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-text h1 {
+  font-size: 5vw;
+}
+.btn1 {
+  color: #ffffff;
+  border: none;
+  padding: 1.2em 3em;
+  border-radius: 25px;
+  background-image: linear-gradient(#808080, #000);
+  cursor: pointer;
+}
+.btn1-container button span {
+  font-weight: 20px;
+  text-transform: uppercase;
+}
+.img-container {
+  display: flex;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/602449bad4492c066f43dfa2/41614fd6-a60e-4c2d-91ed-6aa7d70f8d01/B%26C_Turkish_Pide_House-120.jpg?format=500w");
+  background-repeat: no-repeat;
+  background-size: 400px auto;
+  margin-left: 6vw;
+}
+
+@media (max-width: 880px) {
+  .nav-menu {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .menu2 {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  .menu2 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8em 0;;
+    font-size: 1em;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .menu2 input {
+    width: 15vw;
+    height: 4vh;
+    border-radius: 10%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2vh;
+  }
+  .search2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: center;
+  }
+  .menu2 .btn-close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .icon {
+    display: block;
+  }
+  .icon a {
+    color: #fff;
+  }
+  .header2 {
+    justify-content: flex-start;
+  }
+  .icon,
+  .Search {
+    flex: 50;
+  }
+  .Search input {
+    width: 25vw;
+  }
+  .fa-container a,
+  .menu a {
+    font-size: 1em;
+  }
+}
