@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resturant</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css/body container.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/res.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -24,7 +28,7 @@
         <div class="header">
           <div class="header1">
             <div class="menu">
-              <a href="">Home</a>
+              <a href="res.html">Home</a>
               <a href="contact.html">Contact</a>
               <a href="services.html">Services</a>
               <a href="about.html">About</a>
@@ -39,7 +43,9 @@
             <div class="menu2">
               <a href="#" class="btn-close"><i class="fab fa-close"></i></a>
               <div class="search2">
-                <input type="text" placeholder="search" /><a href="#"><i class="fab fa-search"></i></a>
+                <input type="text" placeholder="search" /><a href="#"
+                  ><i class="fab fa-search"></i
+                ></a>
               </div>
               <a href="">Breakfast Menu</a>
               <a href="">Lunch Menu</a>
@@ -64,25 +70,85 @@
               <a href="">Specials</a>
             </div>
           </div>
-          <div class="wrapper">
-            <div class="img-container"></div>
-            <div class="wrapper-text">
-              <h1>Welcome To</h1>
-              <h1>BNBrand Resturant</h1>
-              <br /><br />
-              <span>Get your self a meal</span><br />
-              <div class="btn1-container">
-                <button class="btn1"><span>BOOK NOW</span></button>
+        </div>
+      </div>
+      <div class="body-content">
+        <div class="form-container">
+          <h1>SignUp or SignIn to stay connected with us</h1>
+          <br /><br />
+          <div class="container-form">
+            <div class="form sign-in-form">
+              <div class="wrapper-1">
+                <form action="#">
+                  <h1>Sign In</h1>
+                  <span>with</span><br /><br />
+                  <div class="social-container">
+                    <a href="#" class="social"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="social"
+                      ><i class="fab fa-google-plus-g"></i
+                    ></a>
+                    <a href="#" class="social"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                  <p>or use your email and password to sign in</p>
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <a href="#">Forgot your password?</a><br /><br />
+                  <button>Sign In</button>
+                </form>
+              </div>
+            </div>
+            <div class="form sign-up-form active">
+              <div class="wrapper-1">
+                <form action="#">
+                  <h1>Sign up</h1>
+                  <span>with</span><br /><br />
+                  <div class="social-container">
+                    <a href="#" class="social"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="social"
+                      ><i class="fab fa-google-plus-g"></i
+                    ></a>
+                    <a href="#" class="social"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                  <p>Or provide all the correct info to create an account</p>
+                  <input type="text" placeholder="Full Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="password" />
+                  <button>Sign Up</button>
+                </form>
+              </div>
+            </div>
+            <div class="overlay-container">
+              <div class="overlay">
+                <div class="overlay-left">
+                  <h1>Welcome</h1>
+                  <p>
+                    To our Resturant, sign up <br />and order your favourite
+                    meals
+                  </p>
+                  <span>Already have and account?, then </span>
+                  <button id="signInButton">Sign In</button>
+                </div>
+                <div class="overlay-right">
+                  <h1>Welcome</h1>
+                  <p>
+                    To our Resturant, sign in <br />and order your favourite
+                    meals
+                  </p>
+                  <span>Do not have and account?, then </span>
+                  <button id="signUpButton">Sign Up</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="body-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        voluptates atque, harum, velit id hic quas, aperiam vero illum alias
-        assumenda reiciendis corporis omnis mollitia dolor consectetur excepturi
-        natus ipsum!
       </div>
       <div class="footer">
         <div class="footer-container">
@@ -118,4 +184,3 @@
     <script src="script/res.js"></script>
   </body>
 </html>
-<!-- https://www.easterntownships.org/files/membermediaupload/149/77/afb9c1e9.jpg -->
